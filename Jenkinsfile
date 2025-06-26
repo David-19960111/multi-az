@@ -4,4 +4,12 @@ pipeline{
     environment {
         
     }
+
+    stages {
+        stage('Checkout'){
+            steps {
+                checkout scm 
+            }
+        }
+    }
 }
