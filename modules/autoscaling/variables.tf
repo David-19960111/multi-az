@@ -1,0 +1,12 @@
+variable "vpc_id" {}
+variable "private_subnet_ids" {}
+variable "ami_id" {}
+variable "instance_type" {}
+variable "name_prefix" {}
+variable "desired_capacity" {}
+variable "min_size" {}
+variable "max_size" {}
+variable "target_group_arn" {}
+variable "alb_security_group_id" {}
+variable "instance_port" {}
+variable "allowed_ssh_cidrs" {}
