@@ -25,7 +25,7 @@ output "public_route_table_id" {
 
 output "private_route_table_id" {
   description = "Route table privada"
-  value       = module.subnets.private_route_table_id
+  value       = module.subnets.private_route_table_ids
 }
 
 output "nat_gateway_ids" {
@@ -35,35 +35,35 @@ output "nat_gateway_ids" {
 
 output "instance_id" {
   description = "ID de la instancia EC2"
-  value       = aws_instance.ec2.id
+  value       = module.ec2.instance_id
 }
 
 output "private_ip" {
   description = "Private IP de la instancia EC2"
-  value       = aws_instance.ec2.private_ip
+  value       = module.ec2.private_ip
 }
 
 output "alb_arn" {
   description = "ARN del Load Balancer"
-  value       = aws_lb.this.arn
+  value       = module.alb.alb_arn
 }
 
 output "alb_dns_name" {
   description = "DNS público del Load Balancer"
-  value       = aws_lb.this.dns_name
+  value       = module.alb.alb_dns_name
 }
 
 output "target_group_arn" {
   description = "ARN del Target Group"
-  value       = aws_lb_target_group.this.arn
+  value       = module.alb.target_group_arn
 }
 
 output "asg_name" {
   description = "Nombre del Auto Scaling Group"
-  value       = aws_autoscaling_group.this.name
+  value       = module.autoscaling.asg_name
 }
 
 output "alb_sg_id" {
   description = "Security Group ID del ALB"
-  value       = aws_security_group.alb_sg.id
+  value       = module.alb.alb_sg_id
 }

@@ -23,5 +23,5 @@ resource "aws_route" "private_nat_gateway" {
   count = length(var.private_route_table_ids)
   route_table_id         = var.private_route_table_ids[count.index]
   destination_cidr_block = "0.0.0.0/0"
-  nat_gateway_id         = element(aws_nat_gateway.nat[*].id, count.index % length(aws_nat_gateway.nat))
+  nat_gateway_id         = element(aws_nat_gateway.nat_gw[*].id, count.index % length(aws_nat_gateway.nat_gw))
 }
