@@ -1,3 +1,13 @@
+#Provider
+variable "region" {}
+variable "aws_access_key" {
+  sensitive = true
+}
+
+variable "aws_secret_key" {
+  sensitive = true
+}
+
 #Virtual Private Cloud
 variable "vpc_cidr" {}
 variable "vpc_name" {}
