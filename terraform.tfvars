@@ -12,7 +12,7 @@ azs                  = ["us-east-1a", "us-east-1b"]
 name_prefix          = "multi-az"
 
 #EC2
-ami_id        = "ami-05ffe3c48a9991133" # Reemplaza con tu AMI (Amazon Linux, Ubuntu, etc.)
+ami_id        = "ami-05ffe3c48a9991133"
 instance_type = "t3.micro"
 
 #Auto Scaling Group
