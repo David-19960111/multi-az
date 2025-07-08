@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 name: Terraform CI/CD
 
 on:
@@ -7,20 +6,6 @@ on:
       - master
   pull_request:
 
-<<<<<<< HEAD
-env:
-    
-=======
-name: Terraform CI/CD
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-
-=======
->>>>>>> f6d7ec70be0a4ac8fa950ac029d24359b80d6b9e
 jobs:
   terraform:
     name: Terraform Plan and Apply
@@ -58,9 +43,4 @@ jobs:
 
       - name: Terraform Apply 
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-<<<<<<< HEAD
         run: terraform apply -auto-approve tfplan
->>>>>>> Stashed changes
-=======
-        run: terraform apply -auto-approve tfplan
->>>>>>> f6d7ec70be0a4ac8fa950ac029d24359b80d6b9e
