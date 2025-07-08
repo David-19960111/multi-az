@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> f6d7ec70be0a4ac8fa950ac029d24359b80d6b9e
 module "vpc" {
   source   = "./modules/vpc"
   vpc_cidr = var.vpc_cidr
@@ -64,4 +67,7 @@ module "autoscaling" {
   instance_port         = 80
   allowed_ssh_cidrs     = ["0.0.0.0/0"]
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> f6d7ec70be0a4ac8fa950ac029d24359b80d6b9e

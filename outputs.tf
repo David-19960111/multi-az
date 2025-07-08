@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> f6d7ec70be0a4ac8fa950ac029d24359b80d6b9e
 output "vpc_id" {
   description = "ID de la VPC"
   value       = module.vpc.vpc_id
@@ -69,4 +72,7 @@ output "alb_sg_id" {
   description = "Security Group ID del ALB"
   value       = module.alb.alb_sg_id
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> f6d7ec70be0a4ac8fa950ac029d24359b80d6b9e
