@@ -1,3 +1,14 @@
+terraform {
+  backend "s3" {
+    bucket         = "mi-nombre-bucket-terraform"         
+    key            = "multi-az/terraform.tfstate"          
+    region         = "us-east-1"                           
+    dynamodb_table = "terraform-locks"                     
+    encrypt        = true
+  }
+}
+
+
 module "vpc" {
   source   = "./modules/vpc"
   vpc_cidr = var.vpc_cidr
