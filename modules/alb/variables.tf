@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 variable "vpc_id" {}
 variable "public_subnet_ids" {}
 variable "name_prefix" {}
 variable "target_port" {}
+=======
+variable "vpc_id" {}
+variable "public_subnet_ids" {}
+variable "name_prefix" {}
+variable "target_port" {}
+>>>>>>> multi-az
 variable "target_protocol" {}
