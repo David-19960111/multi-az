@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 *.tfvars
 *.tfstate
 *.tfstate.backup
-=======
 *.tfvars
 *.tfstate
 *.tfstate.backup
->>>>>>> multi-az
 .terraform/
