@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Security Group para las instancias
 resource "aws_security_group" "this" {
   name        = "${var.name_prefix}-asg-sg"
@@ -84,7 +84,6 @@ resource "aws_autoscaling_group" "this" {
     create_before_destroy = true
   }
 }
-=======
 # Security Group para las instancias
 resource "aws_security_group" "this" {
   name        = "${var.name_prefix}-asg-sg"
@@ -170,4 +169,3 @@ resource "aws_autoscaling_group" "this" {
     create_before_destroy = true
   }
 }
->>>>>>> multi-az

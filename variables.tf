@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #Provider
 variable "region" {
   type    = string
@@ -116,7 +116,7 @@ variable "alb_security_group_id" {
 variable "instance_port" {
   type    = number
   default = 80
-=======
+}
 #Provider
 variable "region" {
   type    = string
@@ -234,5 +234,4 @@ variable "alb_security_group_id" {
 variable "instance_port" {
   type    = number
   default = 80
->>>>>>> multi-az
 }

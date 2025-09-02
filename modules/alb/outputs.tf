@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 output "alb_arn" {
   description = "ARN del Load Balancer"
   value       = aws_lb.lb.arn
@@ -18,7 +18,7 @@ output "alb_sg_id" {
   description = "Security Group ID del ALB"
   value       = aws_security_group.alb_sg.id
 }
-=======
+
 output "alb_arn" {
   description = "ARN del Load Balancer"
   value       = aws_lb.lb.arn
@@ -38,4 +38,4 @@ output "alb_sg_id" {
   description = "Security Group ID del ALB"
   value       = aws_security_group.alb_sg.id
 }
->>>>>>> multi-az
+

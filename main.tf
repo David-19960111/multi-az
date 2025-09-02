@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 module "vpc" {
   source   = "./modules/vpc"
   vpc_cidr = var.vpc_cidr
@@ -63,7 +63,6 @@ module "autoscaling" {
   instance_port         = 80
   allowed_ssh_cidrs     = ["0.0.0.0/0"]
 }
-=======
 module "vpc" {
   source   = "./modules/vpc"
   vpc_cidr = var.vpc_cidr
@@ -128,4 +127,3 @@ module "autoscaling" {
   instance_port         = 80
   allowed_ssh_cidrs     = ["0.0.0.0/0"]
 }
->>>>>>> multi-az

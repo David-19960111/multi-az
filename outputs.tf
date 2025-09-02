@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 output "vpc_id" {
   description = "ID de la VPC"
   value       = module.vpc.vpc_id
@@ -68,7 +68,7 @@ output "alb_sg_id" {
   description = "Security Group ID del ALB"
   value       = module.alb.alb_sg_id
 }
-=======
+
 output "vpc_id" {
   description = "ID de la VPC"
   value       = module.vpc.vpc_id
@@ -138,4 +138,3 @@ output "alb_sg_id" {
   description = "Security Group ID del ALB"
   value       = module.alb.alb_sg_id
 }
->>>>>>> multi-az

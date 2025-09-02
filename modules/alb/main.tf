@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Security Group for ALB
 resource "aws_security_group" "alb_sg" {
   name = "${var.name_prefix}-alb-sg"
@@ -70,7 +69,7 @@ resource "aws_lb_listener" "http" {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg.arn
   }
-=======
+}
 #Security Group for ALB
 resource "aws_security_group" "alb_sg" {
   name = "${var.name_prefix}-alb-sg"
@@ -142,5 +141,4 @@ resource "aws_lb_listener" "http" {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg.arn
   }
->>>>>>> multi-az
 }
