@@ -55,7 +55,7 @@ variable "private_route_table_ids" {
   default = ["value"]
 }
 
-#Ec2
+#Elastic Compute Cloud
 variable "private_subnet_ids" {
   type    = list(string)
   default = ["value"]
@@ -173,7 +173,6 @@ variable "private_route_table_ids" {
   default = ["value"]
 }
 
-#Ec2
 variable "private_subnet_ids" {
   type    = list(string)
   default = ["value"]

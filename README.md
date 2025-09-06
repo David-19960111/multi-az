@@ -41,7 +41,7 @@ multi-az/
 
 ## ⚙️ Requisitos
 
-- [Terraform](https://www.terraform.io/downloads.html) >= 1.5
+- [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) >= 1.5
 - [AWS CLI](https://docs.aws.amazon.com/cli/) instalado
 - [GitHub Actions](https://docs.github.com/actions) habilitado en el repositorio
 
